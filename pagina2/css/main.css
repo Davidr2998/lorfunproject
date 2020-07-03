@@ -1,0 +1,212 @@
+@font-face {
+  font-family: ff-mark;
+  src: url(../fonts/FontFont_FF.Mark.Pro.Medium.otf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: ff-mark;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+/* Para el contenedor de la izquierda */
+
+.titulo {
+  width: 100%;
+  font-size: 12px;
+  margin: 50px 0px 40px 0px;
+  font-size: 12px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.logo-img img {
+  width: 60px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main-container {
+  display: flex;
+  background: #f9f9f9;
+  width: 65%;
+  height: 720px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left-container {
+  width: 40%;
+  margin: 50px 75px;
+}
+
+.input-text{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.placeholder{
+  text-transform: uppercase;
+  font-size: 10px;
+  font-family: ff-mark;
+  font-weight: 700;
+  color: #ababab;
+  position: absolute;
+  top:35%;
+  left: 15px;
+  user-select: none;
+  pointer-events: none;
+  transition: .095s ;
+}
+
+.input-text input {
+  font-family: ff-mark;
+  font-size: 16px;
+  background: #ededed;
+  width: 100%;
+  height: 50px;
+  padding: 10px 0px 0px 8px;
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-text input:focus {
+  background: #f9f9f9;
+  border: 2px solid #212121;
+}
+
+.input-text input:focus ~ .placeholder,
+.input-text input:valid ~ .placeholder{
+  top: 10%;
+  left:8px;
+  font-size: 9px;
+  transition: .095s ;
+}
+
+/*Creando checkbox personalizado
+video de referencia:
+*/
+label {
+  font-size: 13px;
+  color:#9999B1;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+  padding: 0.em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  background-color: #ededed;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-top: 1em;
+  margin-right: 1em;
+  vertical-align: bottom;
+  color: transparent;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #d13639;
+  color: #f9f9f9;
+}
+
+input[type="checkbox"]:checked + label{
+  color: #212121;
+}
+/*aquí termina todo el estilo del checkbox y el label de permanecer
+conectado*/
+
+.boton{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.rounded-button{
+  background-color: transparent;
+  border: 2px solid #ededed;
+  border-radius: 22px;
+  width: 70px;
+  height: 70px;
+  outline: none;
+  cursor: pointer;
+  font-size: 32px;
+  color: #ededed;
+}
+
+.rounded-button:focus{
+  background-color: #d13639;
+  border: none;
+  color: #ededed;
+}
+
+.helpbar{
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.helpbar a{
+  font-family: ff-mark;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ababab;
+}
+
+.helpbar a:hover{
+  color: #212121
+}
+/* Aquí termina todo el estilo del contenedor de la izquierda*/
+
+
+.right-container{
+  width: 100%;
+}
+
+.right-container img{
+  width: 100%;
+  height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
